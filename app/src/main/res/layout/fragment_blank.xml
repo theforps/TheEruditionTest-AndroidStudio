@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGround"
+    tools:context=".BlankFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/mainLabel"
+            style="@style/StyleForLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/MainLabel"
+            android:textSize="25pt" />
+
+        <Button
+            android:id="@+id/But1"
+            style="@style/MainButtons"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="MainClick"
+            android:text="@string/Start"
+            android:textSize="15pt"
+            app:cornerRadius="15dp"
+            app:rippleColor="#64ac8f"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/But2"
+            style="@style/MainButtons"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="MainClick"
+            android:text="@string/Exit"
+            android:textSize="15pt"
+            app:cornerRadius="15dp"
+            app:rippleColor="#64ac8f"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/But3"
+            style="@style/MainButtons"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="MainClick"
+            android:text=""
+            android:textSize="15pt"
+            android:visibility="invisible"
+            app:cornerRadius="15dp"
+            app:rippleColor="#64ac8f"
+            tools:ignore="UsingOnClickInXml"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/But4"
+            style="@style/MainButtons"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="MainClick"
+            android:text=""
+            android:textSize="15pt"
+            android:visibility="invisible"
+            app:cornerRadius="15dp"
+            app:rippleColor="#64ac8f"
+            tools:ignore="UsingOnClickInXml"
+            tools:visibility="invisible" />
+
+    </LinearLayout>
+
+</FrameLayout>
